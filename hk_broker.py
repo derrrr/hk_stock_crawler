@@ -32,7 +32,6 @@ def _get_session():
 
 
 def get_market_date():
-
     # MarketDate data is not up to date
     """
     date_url = "http://data.tsci.com.cn/script_data/MarketDate.js"
@@ -53,9 +52,7 @@ def get_market_date():
     return date_market.strftime("%Y-%m-%d")
 
 
-
 def hk_broker(ticker):
-
     date_market_str = get_market_date()
 
     # "...val={}" in url means the max of data search
